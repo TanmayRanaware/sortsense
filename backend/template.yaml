@@ -10,7 +10,6 @@ Globals:
     Environment:
       Variables:
         S3_BUCKET: sortsense-demo-tanmay
-        AWS_REGION: us-west-2
         LLAMA_VISION_MODEL: meta.llama3-2-11b-vision-instruct-v1:0
 
         SNOWFLAKE_USER: USER
