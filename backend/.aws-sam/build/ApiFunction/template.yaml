@@ -1,0 +1,52 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: SortSense FastAPI
+
+Globals:
+  Function:
+    Timeout: 30
+    MemorySize: 1024
+    Runtime: python3.11
+    Environment:
+      Variables:
+        S3_BUCKET: sortsense-demo-tanmay
+        AWS_REGION: us-west-2
+        LLAMA_VISION_MODEL: meta.llama3-2-11b-vision-instruct-v1:0
+
+        SNOWFLAKE_USER: USER
+        SNOWFLAKE_PASSWORD: sn0wf@ll
+        SNOWFLAKE_ACCOUNT: svai_hub_hackathon_ekuikc
+        SNOWFLAKE_WAREHOUSE: DEFAULT_WH
+        SNOWFLAKE_DATABASE: DEFAULT_DATABASE
+        SNOWFLAKE_SCHEMA: PUBLIC
+        SNOWFLAKE_ROLE: ATTENDEE_ROLE
+
+        WRITER_API_KEY: ""         # leave empty if you don't have it
+        WRITER_MODEL: palmyra-x5
+
+Resources:
+  ApiFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: .
+      Handler: app.handler
+      Policies:
+        - AWSLambdaBasicExecutionRole
+        - Statement:
+            Effect: Allow
+            Action:
+              - s3:PutObject
+              - s3:GetObject
+            Resource: arn:aws:s3:::sortsense-demo-tanmay/*
+        - Statement:
+            Effect: Allow
+            Action:
+              - textract:DetectDocumentText
+              - bedrock:InvokeModel
+            Resource: "*"
+      Events:
+        HttpApiEvent:
+          Type: HttpApi
+          Properties:
+            Path: /{proxy+}
+            Method: ANY

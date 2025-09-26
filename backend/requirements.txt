@@ -1,0 +1,6 @@
+fastapi
+mangum
+boto3
+requests
+snowflake-connector-python
+uvicorn
