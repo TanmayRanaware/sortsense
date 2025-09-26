@@ -189,12 +189,24 @@ async def upload_invoice(file: UploadFile = File(...)):
 
 @app.get("/kpis")
 def kpis():
-    with sf() as con:
-        cur = con.cursor()
-        cur.execute(f"SELECT * FROM {SNOWFLAKE_DATABASE}.{SNOWFLAKE_SCHEMA}.VIEW_KPIS;")
-        row = cur.fetchone()
-        cols = [c[0].lower() for c in cur.description]
-        data = dict(zip(cols, row))
+    try:
+        with sf() as con:
+            cur = con.cursor()
+            cur.execute(f"SELECT * FROM {SNOWFLAKE_DATABASE}.{SNOWFLAKE_SCHEMA}.VIEW_KPIS;")
+            row = cur.fetchone()
+            cols = [c[0].lower() for c in cur.description]
+            data = dict(zip(cols, row))
+        # coalesce None -> 0 for numeric fields
+        for k in ("recycle_kg", "compost_kg", "landfill_kg", "diversion_rate"):
+            data[k] = float(data.get(k) or 0)
+    except Exception as e:
+        print("KPI query failed:", repr(e))
+        data = {
+            "recycle_kg": 0.0,
+            "compost_kg": 0.0,
+            "landfill_kg": 0.0,
+            "diversion_rate": 0.0,
+        }
     data["summary"] = writer_kpi_summary(data)
     return data
 

@@ -1,4 +1,4 @@
-_cffi_backend.cpython-311-x86_64-linux-gnu.so,sha256=K3Ig76G2fNGS7ef9yadiP-gNjpCHXd-J1ZNzvv6jfQs,1068624
+_cffi_backend.cpython-39-x86_64-linux-gnu.so,sha256=zwO8PBDc8pt439fYCaiNYUESKCab8pAtGANCGmUJtEk,981728
 cffi/_cffi_errors.h,sha256=zQXt7uR_m8gUW-fI2hJg0KoSkJFwXv8RGUkEDZ177dQ,3908
 cffi/backend_ctypes.py,sha256=h5ZIzLc6BFVXnGyc9xPqZWUS7qGy7yFSDqXe68Sa8z4,42454
 cffi/verifier.py,sha256=oX8jpaohg2Qm3aHcznidAdvrVm5N4sQYG0a3Eo5mIl4,11182
@@ -25,5 +25,5 @@ cffi-1.17.1.dist-info/LICENSE,sha256=BLgPWwd7vtaICM_rreteNSPyqMmpZJXFh72W3x6sKjM
 cffi-1.17.1.dist-info/METADATA,sha256=u6nuvP_qPJKu2zvIbi2zkGzVu7KjnnRIYUFyIrOY3j4,1531
 cffi-1.17.1.dist-info/top_level.txt,sha256=rE7WR3rZfNKxWI9-jn6hsHCAl7MDkB-FmuQbxWjFehQ,19
 cffi-1.17.1.dist-info/RECORD,,
-cffi-1.17.1.dist-info/WHEEL,sha256=JyEZ6Cxo51rQOYRMkM7cW9w1CnY9FuHxSeIJCGoxjS4,151
+cffi-1.17.1.dist-info/WHEEL,sha256=Dp4ftV16RRdThecq2zolmwSj4PBysPaShzigypv-XaA,147
 cffi-1.17.1.dist-info/entry_points.txt,sha256=y6jTxnyeuLnL-XJcDv8uML3n6wyYiGRg8MTp_QGJ9Ho,75

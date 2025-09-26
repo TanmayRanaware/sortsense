@@ -5,15 +5,14 @@ Globals:
   Function:
     Timeout: 30
     MemorySize: 1024
-    Runtime: python3.11
+    Runtime: python3.9
     Environment:
       Variables:
         S3_BUCKET: sortsense-demo-tanmay
-        AWS_REGION: us-west-2
         LLAMA_VISION_MODEL: meta.llama3-2-11b-vision-instruct-v1:0
         SNOWFLAKE_USER: USER
         SNOWFLAKE_PASSWORD: sn0wf@ll
-        SNOWFLAKE_ACCOUNT: svai_hub_hackathon_ekuikc
+        SNOWFLAKE_ACCOUNT: sfsehol-svai_hub_hackathon_ekuikc
         SNOWFLAKE_WAREHOUSE: DEFAULT_WH
         SNOWFLAKE_DATABASE: DEFAULT_DATABASE
         SNOWFLAKE_SCHEMA: PUBLIC

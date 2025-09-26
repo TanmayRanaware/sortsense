@@ -33,7 +33,7 @@ snowflake/connector/gzip_decoder.py,sha256=CxMXSL-IcCgQhbEqv6Vds7rvni_8jbNIPJgcn
 snowflake/connector/interval_util.py,sha256=5v22s-rhTy7TBuFx4GwPxPaObbkJLGrfrqNV0eaIFPg,422
 snowflake/connector/local_storage_client.py,sha256=hoNRw8eg3JT8lRpAhe75O07revggiMwaKJcGWp6DZoI,3185
 snowflake/connector/log_configuration.py,sha256=I2D7K-YYHNpPRFieEu4scKgCLVMjtZheJ8KS4bS8jU4,2645
-snowflake/connector/nanoarrow_arrow_iterator.cpython-311-x86_64-linux-gnu.so,sha256=uHYFdRKlZ9RKUrei1-olh88wgXQM_u6c7glG5QRBLX8,6354088
+snowflake/connector/nanoarrow_arrow_iterator.cpython-39-x86_64-linux-gnu.so,sha256=eMBbGeMikxrdtAO3E9uR6Gq_kkZVy7MlfCE8f0OXy_A,6272496
 snowflake/connector/network.py,sha256=LaSlovbK6N-lwZujQ8QorlWtwHZmQSsefO_ASZGUh9k,41904
 snowflake/connector/ocsp_asn1crypto.py,sha256=4q6APSXkhZtQc458L0wOHq2uQXWR2PBo2ZQ9laUFL0o,17613
 snowflake/connector/ocsp_snowflake.py,sha256=zYfdF8QhUDaMI-QSi5L0E1O5-FVg7lJoLAEW85PNIPw,77399
@@ -241,7 +241,7 @@ snowflake/connector/vendored/urllib3/util/url.py,sha256=WRh-TMYXosmgp8m8lT4H5spo
 snowflake/connector/vendored/urllib3/util/util.py,sha256=j3lbZK1jPyiwD34T8IgJzdWEZVT-4E-0vYIJi9UjeNA,1146
 snowflake/connector/vendored/urllib3/util/wait.py,sha256=_ph8IrUR3sqPqi0OopQgJUlH4wzkGeM5CiyA7XGGtmI,4423
 snowflake_connector_python-3.17.4.dist-info/METADATA,sha256=VbjU5jF5sXT1yb3Q_i3Z1vN2IzCmjmyN8tXrWkEt-YY,74691
-snowflake_connector_python-3.17.4.dist-info/WHEEL,sha256=_CFvICYDmZlAYHt8L7Zn3n-BGLj8dkZLQPp22Piy5JE,151
+snowflake_connector_python-3.17.4.dist-info/WHEEL,sha256=A4SdjgbIBZ_kjTsEuOcR8fCpVKV5dez8wjeT_kpjoQs,147
 snowflake_connector_python-3.17.4.dist-info/entry_points.txt,sha256=dvknLpfVhFTt3kXnOmtZ6ivkfWvx8y7zqVMwZq_qaD8,254
 snowflake_connector_python-3.17.4.dist-info/top_level.txt,sha256=TY0gFSHKDdZy3THb0FGomyikWQasEGldIR1O0HGOHVw,10
 snowflake_connector_python-3.17.4.dist-info/RECORD,,
