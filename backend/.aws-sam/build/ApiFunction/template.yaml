@@ -11,15 +11,13 @@ Globals:
       Variables:
         S3_BUCKET: sortsense-demo-tanmay
         LLAMA_VISION_MODEL: meta.llama3-2-11b-vision-instruct-v1:0
-
         SNOWFLAKE_USER: USER
         SNOWFLAKE_PASSWORD: sn0wf@ll
-        SNOWFLAKE_ACCOUNT: sfsehol-svai_hub_hackathon_ekuikc
+        SNOWFLAKE_ACCOUNT: SFSEHOL-SVAI_HUB_HACKATHON_EKUIKC
         SNOWFLAKE_WAREHOUSE: DEFAULT_WH
         SNOWFLAKE_DATABASE: DEFAULT_DATABASE
         SNOWFLAKE_SCHEMA: PUBLIC
         SNOWFLAKE_ROLE: ATTENDEE_ROLE
-
         WRITER_API_KEY: ""
         WRITER_MODEL: palmyra-x5
 
@@ -49,3 +47,16 @@ Resources:
           Properties:
             Path: /{proxy+}
             Method: ANY
+
+  MyHttpApi:
+    Type: AWS::Serverless::HttpApi
+    Properties:
+      CorsConfiguration:
+        AllowOrigins:
+          - "*"
+        AllowHeaders:
+          - "*"
+        AllowMethods:
+          - GET
+          - POST
+          - OPTIONS
