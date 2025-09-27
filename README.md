@@ -186,10 +186,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - FastAPI for the backend framework
 - Next.js for the frontend framework
 
-## 📞 Support
-
-For support, email support@sortsense.com or create an issue in this repository.
-
 ---
 
 **SortSense** - Making waste management smarter, one upload at a time! ♻️
